@@ -1,0 +1,264 @@
+
+POST
+localhost:4444/auth/signup
+
+// recruiter
+
+{
+    "email": "vasudev@gmail.com",
+    "password": "test",
+    "type": "recruiter",
+    "name": "Vasudevan Kumar",
+    "contactNumber": "+91-9876543210",
+    "bio": "I am a recruiter from Google."
+}
+
+{
+    "email": "vivaan@gmail.in",
+    "password": "test",
+    "type": "recruiter",
+    "name": "Vivaan Sagar",
+    "contactNumber": "+91-8967452301",
+    "bio": "I am a recruiter from Microsoft."
+}
+
+// applicant
+
+{
+    "email": "abhishek@gmail.com",
+    "password": "test",
+    "type": "applicant",
+    "name": "Abhishek Srivastava",
+    "education": [
+        {
+            "institutionName": "R.L.B. Mem. School",
+            "startYear": 2020,
+            "endYear": 2021
+        },
+        {
+            "institutionName": "I.E.T. Lucknow",
+            "startYear": 2021
+        }
+    ],
+    "skills": [
+        "C/C++",
+        "Python",
+        "MERN"
+    ]
+}
+
+{
+    "email": "atul@gmail.com",
+    "password": "test",
+    "type": "applicant",
+    "name": "Atul Joshi",
+    "education": [
+        {
+            "institutionName": "N.I.T. Trichy",
+            "startYear": 2016,
+            "endYear": 2020
+        }
+    ],
+    "skills": [
+        "Android Development",
+        "Parallel Programming",
+        "Blockchain"
+    ]
+}
+
+// Login
+
+POST
+localhost:4444/auth/login
+
+
+{
+    "email": "vasudev@gmail.com",
+    "password": "test",
+    "type": "recruiter"
+}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA1NzMzNWMzNWQ1NTJlMDU5NzA1YzYiLCJpYXQiOjE2MTA5Njk5MDl9.6f4qhjHIaRU_lnY74WB2mK_h7uo32tp1V4uf3DVN5GQ"
+}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA4NTk5ZTIwODQyZjA1YTE3NzU4ZjkiLCJpYXQiOjE2MTExNTk5NjZ9.DIGyjwezwheqFkex0dZSIOEKrEUXXSNka9Va2B2rYVc"
+}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA4Njg0Mzk1ZTUxMDIwYmI2OTVlZGEiLCJpYXQiOjE2MTExNjM3MTV9.6UlyrgwLvM0o8tXcihJVWTnnJNO0WlBXAAF8RKmlgRQ"
+}
+
+{
+    "email": "vivaan@gmail.in",
+    "password": "test",
+    "type": "recruiter"
+}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA1NzM2N2MzNWQ1NTJlMDU5NzA1YzkiLCJpYXQiOjE2MTA5Njk5NTl9.KVjgEa8U0BcZQ4pfJd1mr2h-CP6ZBOJKanFhmQQFDPo"
+}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA4NTllNDIwODQyZjA1YTE3NzU4ZmMiLCJpYXQiOjE2MTExNjAwMzZ9.FA0jrx3d1en4zP3ElDkRtUV1pulgPDIpVeXOfBTIy80"
+}
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA4Njg1OTk1ZTUxMDIwYmI2OTVlZGMiLCJpYXQiOjE2MTExNjM3Mzd9.zLS_VltLBVTXcGqzO4jGjrZ4OagxL2U5MXjcdLn5jNY"
+}
+
+{
+    "email": "abhishek@gmail.com",
+    "password": "test",
+    "type": "applicant"
+}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA1NzM4YWMzNWQ1NTJlMDU5NzA1Y2IiLCJpYXQiOjE2MTA5Njk5OTR9.8pb8nBN0npAT_uW-2OJV8DuqXDJlPy_HOjm_MdQUwLA"
+}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA4NWEwMjIwODQyZjA1YTE3NzU4ZmUiLCJpYXQiOjE2MTExNjAwNjZ9.P4NLHyah0O6ISH4LSkEAna7g-YovyM1ArnVGJ54TcEw"
+}
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA4Njg2Yzk1ZTUxMDIwYmI2OTVlZGUiLCJpYXQiOjE2MTExNjM3NTd9.UuqeMrMGYGJ3tJtvs8Z9VgLxqIF6QUHKjU9EIbQ8Pjc"
+}
+
+{
+    "email": "atul@gmail.com",
+    "password": "test",
+    "type": "applicant"
+}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA1NzNhMWMzNWQ1NTJlMDU5NzA1ZDAiLCJpYXQiOjE2MTA5NzAwMTd9.oL617v51AErVlaPGr1oP-5ILQbA9DO2DAoQRFtLh52U"
+}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA4NWExNjIwODQyZjA1YTE3NzU5MDMiLCJpYXQiOjE2MTExNjAwODd9.YoYpauFDzF28ZzKkeItbRPdcqw8biNKujNfZCGCKibw"
+}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA4Njg4Mzk1ZTUxMDIwYmI2OTVlZTMiLCJpYXQiOjE2MTExNjM3Nzl9.iFPFXu3aOax6muoCzNJavGSKa9s87S5AIXTiHvJ0OSQ"
+}
+
+// jobs
+
+GET
+localhost:4444/api/jobs
+
+POST
+localhost:4444/api/jobs
+
+Admin 1
+
+{
+    "title": "Software Development Intern",
+    "maxApplicants": 5,
+    "maxPositions": 1,
+    "deadline": "2023-07-22T18:17:24.519Z",
+    "skillsets": ["C", "C++", "Javascript"],
+    "jobType": "Internship",
+    "duration": 2,
+    "salary": 40000
+}
+
+{
+    "title": "Web Development(Full Time)",
+    "maxApplicants": 1,
+    "maxPositions": 1,
+    "deadline": "2023-08-20T18:17:24.519Z",
+    "skillsets": ["PHP", "Django"],
+    "jobType": "Full Time",
+    "duration": 0,
+    "salary": 15000
+}
+
+Admin 2
+
+{
+    "title": "Full Stack Intern",
+    "maxApplicants": 5,
+    "maxPositions": 3,
+    "deadline": "2021-02-20T18:17:24.519Z",
+    "skillsets": ["ReactJS", "NodeJS", "Express"],
+    "jobType": "Internship",
+    "duration": 5,
+    "salary": 25000
+}
+
+// view a job
+// delete a job
+
+// update a job
+
+{
+    "maxApplicants": 4,
+    "maxPositions": 2,
+    "deadline": "2021-02-21T18:17:24.519Z"
+}
+
+
+// get user personal details
+GET
+localhost:4444/api/user
+
+// update user details
+PUT
+localhost:4444/api/user
+
+{
+    "name": "Deepak Bhadra",
+    "contactNumber": "+91-9123456789",
+    "bio": "I am a recruiter from Amazon",
+}
+
+// job application
+
+{
+    "sop": "Abhishek: I am a promissing candidate."
+}
+
+{
+    "sop": "Atul: I have vast relevant experience."
+}
+
+// update status
+
+// for client side
+{
+    "status": "cancelled"
+}
+
+{
+    "status": "shortlisted"
+}
+
+{
+    "status": "rejected"
+}
+
+{
+    "status": "accepted"
+}
+
+{
+    "status": "finished"
+}
+
+// test rating
+
+{
+    "applicantId": "6005738ac35d552e059705cb",
+    "rating": 4.2
+}
+
+{
+    "applicantId": "600573a1c35d552e059705d0",
+    "rating": 3.5
+}
+
+{
+    "jobId": "600576e16ce7b7325f5b5c70",
+    "rating": 4.0
+}
